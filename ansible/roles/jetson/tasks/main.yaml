@@ -104,13 +104,13 @@
     name: en_US.UTF-8
     state: present
 
-- name: Enable services
-  systemd:
-    name: "{{ item }}"
-    enabled: yes
-  loop:
-    - ssh
-    - systemd-networkd
+# - name: Enable services
+#  systemd:
+#    name: "{{ item }}"
+#    enabled: yes
+#  loop:
+#    - ssh
+#    - systemd-networkd
 
 - name: Update network conf
   template:
